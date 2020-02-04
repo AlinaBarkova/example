@@ -1,7 +1,7 @@
-node('remote') {
+node {
     // Note : this step is only needed if you're using direct Groovy scripting
     stage 'Checkout Git project'
-    git url: 'https://github.com/jglick/simple-maven-project-with-tests.git'
+    git url: 'https://github.com/AlinaBarkova/example.git'
     def appVersion = version()
     if (appVersion) {
         echo "Building version ${appVersion}"
